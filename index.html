@@ -1,0 +1,238 @@
+
+
+<!--
+Most images gotten from: https://pixabay.com/
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ADA HOEL</title>
+    <script src="script/jquery-3.2.1.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="img/favicon.ico.gif" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="css/demo.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  </head>
+  <body id="body">
+    <div id="bodyWrapper">
+    <section id="cover">
+      <div id="coverWrapper">
+        <div id="titleWrapper">
+          <p id="title">ADA HOEL</p>
+        </div>
+        <img id="mobile_video_substitute" src="img/trippy_background.png" alt="img/jpg">
+        <video width="320" height="240" autoplay loop muted>
+          <source src="img/coverVideo.mp4" type="video/mp4">
+          <img title="Your browser does not support the <video> tag">
+        </video>
+      </div>
+      <img class="soundwave" id="soundWaveBottom" src="img/topWave.png" alt="img/svg">
+    </section>
+    <section id="about">
+      <p id="aboutTxt"><span id="fill_with_js"></span><span id="dot">.</span></p>
+      <div id="buttonWrapper" >
+        <div class="button prev" id="prev_button" onclick="playAboutTxt(-1)"><p>PREV</p></div>
+        <div class="button next" id="next_button" onclick="playAboutTxt(1)"><p>NEXT</p></div>
+      </div>
+    </section>
+    <section id="media" class="parallax">
+      <img class="soundwave" id="soundWaveTop" src="img/bottomWave.png" alt="img/svg">
+      <div class="media_wrapper">
+        <div class="wrapper">
+          <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/IGWvbBqAlX8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="text_wrapper">
+            <pre>
+Under / Time
+
+Time is slipping through my hands
+I’m overtime, half time
+My mind is morphing through states
+till I’m out of time in no time
+
+For a while I’ve wondered if wandering’s
+waste of time or worth my while 
+Oh time, a limit for living
+but take your time
+Yes take your time
+            </pre>
+            <div class="show_lyrics_button" onclick="show_lyrics()">
+             <!-- <img src="img/arrow.svg" alt="img/svg"> -->
+             <p>lyrics</p>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper">
+          <iframe class="iframe" id="VIMiframe" src="https://player.vimeo.com/video/271770218" width="640" height="374" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+      <img  id="fish1" class="seacreature" src="img/fish1.png" alt="img/png">
+      <img  id="fish4" class="seacreature" src="img/fish4.png" alt="img/png">
+      <img  id="fish3" class="seacreature" src="img/fish3.png" alt="img/png">
+      <img  id="fish2" class="seacreature" src="img/fish2.png" alt="img/png">
+      <img  id="fish5" class="seacreature" src="img/fish5.png" alt="img/png">
+      <div id="fish6wrapper">
+        <img  id="fish6" class="seacreature" src="img/fish6.png" alt="img/png">
+      </div>
+      <img id="grass" src="img/grass.png" alt="img/png">
+    </section>
+    <section id="other_projects" class="parallax">
+      <h1 id="other_projects_title">Works:</h1>
+      <div class="above_content_wrapper">
+        <div id="menu_wrapper">
+          <div class="menu one" onclick="move_menu_box(1)" >Selected Performances</div>
+          <div class="menu two"onclick="move_menu_box(2)">Bands</div>
+          <div class="menu three" onclick="move_menu_box(3)" >Audio Engineer</div>
+        </div>
+      </div>
+      <div id="other_projects_content">
+        <div id="bands">
+          <div class="band" id="fro">
+            <div class="content">
+              <div class="wrapper">
+                <img class="fro_img bands bilde1" src="img/fro_square_pix.png" alt="img/png">
+                <img class="fro_img bands bilde2" src="img/fro_no_px.png" alt="img/png">
+              </div>
+              <div class="projects_text fro_text">
+                <h2>Frõ</h2>
+                <p>Frõ is an experimental duo improvising through electronic music. Together, Frida Blomberg and Ada Hoel join their voices with electronic processing to create their musical landscape.</p>
+              </div>
+            </div>
+            <div class="social_media_wrapper" id="someFRO">
+              <div class="socialMedia facebook"> <a target="_blank" href="https://www.facebook.com/fromusikk/"><p>FACEBOOK</p></a></div>
+              <div class="socialMedia instagram"> <a target="_blank" href="https://www.instagram.com/fromusikk/"><p>INSTAGRAM</p></a></div>
+              <div class="socialMedia Scloud"> <a target="_blank" href="https://soundcloud.com/fromusikk"><p>SOUNDCLOUD</p></a></div>
+            </div>
+          </div>
+          <div class="band" id="henNok">
+            <div class="content">
+              <div class="projects_text nok_text" >
+                <h2 id="NOKh2">Henriette Nok</h2>
+                <p>Henriette Nok is an experimental indie-pop band consisting of Henriette Guldberg (vocals and guitar), Birgitte Bjerke (guitar), Lars Okstad (bass) and Ada Hoel (drums).</p>
+              </div>
+              <div class="wrapper" id="nok_wrapper">
+                <img class=" bands NOK bilde1" src="img/hen_nok_px.png" alt="img/png">
+                <img class=" bands NOK bilde2" src="img/nok.jpg" alt="img/png">
+              </div>
+            </div>
+            <div class="social_media_wrapper" id="someNOK">
+              <div class="socialMedia Scloud"> <a target="_blank" href="https://soundcloud.com/enrietteok"><p>SOUNDCLOUD</p></a></div>
+              <div class="socialMedia instagram"> <a><p>...</p></a></div>
+              <div class="socialMedia facebook"> <a target="_blank" href="https://www.facebook.com/henriettenok/"><p>FACEBOOK</p></a></div>
+            </div>
+          </div>
+        </div>
+        <div id="audio_engineer">
+          <div class="engineer" id="yng_voices">
+            <div class="content" id="engineer_content">
+              <div class="wrapper" id="yng_wrapper" >
+                <img class="engineer_img bilde1" src="img/trd_voices_px.png" alt="img/png">
+                <img class="engineer_img bilde2" src="img/trd_voices.png" alt="img/png">
+              </div>
+              <div class="projects_text yv_text" id="yv_text">
+                <h2 class="stroke">Young Voices</h2>
+                <h3 class="stroke">Autumn is the New Spring</h3>
+                <p>Young Voices is a vocal ensemble based in Trondheim which explores improvisation and interplay. Ada co-produced, recorded, mixed and mastered their latest EP “Autumn is the New Spring”.</p>
+              </div>
+            </div>
+            <div class="social_media_wrapper" id="someTRDVOICES">
+              <div class="socialMedia facebook" > <a target="_blank" href="https://www.facebook.com/youngvoicestrondheim/"><p>FACEBOOK</p></a></div>
+              <div class="socialMedia instagram" > <a target="_blank" href="https://www.instagram.com/y_oungvoices/"><p>INSTAGRAM</p></a></div>
+            </div>
+          </div>
+          <div class="engineer" id="SMA">
+            <div class="content" id="SMA_content">
+              <div class="wrapper" id="SMA_wrapper" >
+                <iframe class="SMA_vid" target="_blank" src="https://player.vimeo.com/video/230257362" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              </div>
+              <div class="projects_text SMA_text" id="SMA_text">
+                <h2>Make SMA History</h2>
+                <p>Make SMA History is an independent awareness film directed by Erlend Glasø Faltinsen for Cure SMA, an organization working to find a cure for spinal muscular athrophy (SMA). Ada did the recording, mixing and mastering for this project.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="selected_performances">
+
+          <div class="performances">
+            <div class="content">
+
+              <div class="wrapper">
+                <img class="performance_img bilde1" src="img/KKXX.png" alt="img/png">
+                <img class="performance_img bilde2" src="img/KKXX.jpg" alt="img/jpg">
+                <h2>Solo - KKXX</h2>
+              </div>
+              <div class="projects_text">
+                  <p>At this event, the 20th anniversary of Klub Kanin, Ada performed an improvised solo set exploring loud bass, electronic bleeps and processed vocals.</p>
+              </div>
+            </div>
+          </div>
+
+            <div class="performances">
+              <div class="content">
+                <div class="wrapper">
+                  <img class="performance_img bilde1" src="img/ADASUN_px.png" alt="img/png">
+                  <img class="performance_img bilde2" src="img/ADASUN.png" alt="img/jpg">
+                  <h2>SUN & ADA</h2>
+                </div>
+                <div class="projects_text parallax" id="sun_ada_txt">
+                    <p>Swamps Up Nostrils & Ada Hoel played together at Trondhjems Kunstforening during Mari Meen Halsøy’s exhibition WOUNDS where she staged a repairing of the wounds after the civil war in Beirut, Lebanon. To illustrate war and the ongoing aftermath they tore fabric apart and captured the sound with contact microphones, processed it and integrated it in their performance.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="performances">
+              <div class="content">
+
+                <div class="wrapper">
+                  <img class="performance_img bilde1" src="img/martin_dario_px.png" alt="img/png">
+                  <img class="performance_img bilde2" src="img/martin_dario.png" alt="img/jpg">
+                  <h2>Martin Lie Svendsen/Dario Fariello/Ada Hoel </h2>
+                </div>
+                <div class="projects_text">
+                    <p>At the event “Å miste seg selv” (to lose yourself) the musicians got together for the first time on stage to create a spontaneus first meeting concert. Martin Lie Svendsen - banjo and upright bass, Dario Fariello - saxophone, Ada Hoel - voice and processing.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="performances">
+              <div class="content" id="performance_content">
+
+                <div class="wrapper">
+                  <img class="performance_img bilde1" src="img/bach_konsert_px.png" alt="img/png">
+                  <img class="performance_img bilde2" src="img/bach_konsert2.png" alt="img/jpg">
+                  <h2>Bachelor Concert</h2>
+                </div>
+                <div id="bach_txt" class="projects_text parallax">
+                    <p>With Håkon Brunborg Kjenstad and Ola Djupvik Ada explored live cross-adaptive processing and auto-adaptive processing at Dokkhuset as part of her Bachelor’s Degree concert. With tools like Max/MSP, Max for Live and Ableton Live they dived into processing themselves and each other in different modes through improvisational playing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+      <div class="filter">
+      </div>
+      <section id="contact">
+        <h2 id="black_h2">Contact</h2>
+        <h2 id="yellow_h2">Contact</h2>
+
+        <div class="contact_div">
+          <p class="contact_info"> ada.hoel@gmail.com</p>
+        </div>
+
+        <div class="web_design">
+          <p>Webpage by</p>
+          <p>Mats N. Olsen</p>
+          <p>matsnordaasolsen@gmail.com</p>
+        </div>
+        <div class="some_contact">
+          <a target="_blank" href="https://www.facebook.com/adahoelmusic/"><img src="css/8bitFB.png" alt="img/png"></a>
+          <a target="_blank" href="https://www.instagram.com/adahoel/"><img src="css/8bitIG.png" alt="img/png"></a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCrMB8FpmzVXZno4cHp_fR4A"><img src="css/8bitYT.png" alt="img/png"></a>
+        </div>
+      </section>
+    </section>
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>

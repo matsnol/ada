@@ -1,0 +1,1464 @@
+@keyframes blink {
+  0% {
+    color: #F9CF00; }
+  100% {
+    color: black; } }
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: 500ms transform ease-in-out;
+  font-family: 'Press Start 2P', sans-serif; }
+
+html {
+  background: black; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+  a:hover {
+    cursor: pointer; }
+
+#bodyWrapper {
+  overflow-x: hidden; }
+  #bodyWrapper section {
+    width: 100vw;
+    position: relative; }
+
+#soundWaveBottom {
+  bottom: 0; }
+
+.soundwave {
+  position: absolute;
+  width: 100vw;
+  z-index: 10; }
+  @media (max-width: 449px) {
+    .soundwave {
+      height: 150px;
+      width: 250vw; } }
+  @media (min-width: 600px) {
+    .soundwave {
+      height: 200px; } }
+  @media (min-width: 900px) {
+    .soundwave {
+      height: 200px !important; } }
+  @media (min-width: 1200px) {
+    .soundwave {
+      height: 200px; } }
+
+.parallax {
+  height: 100vh;
+  min-height: 350px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+#other_projects {
+  background-image: url(jellyfish.jpg);
+  padding-bottom: 20px; }
+
+.filter {
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 0;
+  position: absolute;
+  top: 0; }
+
+#cover {
+  position: relative;
+  overflow: hidden; }
+  @media (max-width: 449px) {
+    #cover {
+      height: 100vh; } }
+  @media (min-width: 450px) {
+    #cover {
+      height: 100vh; } }
+  @media (min-width: 1200px) {
+    #cover {
+      height: 700px; } }
+  @media (min-width: 1500px) {
+    #cover {
+      height: 1080px; } }
+  #cover #coverWrapper {
+    min-height: 700px;
+    position: relative;
+    width: inherit; }
+  #cover video {
+    display: none; }
+  #cover #mobile_video_substitute {
+    display: block;
+    width: 100vw;
+    height: 100vh; }
+  @media (min-width: 1200px) {
+    #cover video {
+      display: block;
+      width: 2000px;
+      margin-left: calc((100% - 2000px)/2);
+      margin-top: -100px;
+      height: 1000px; } }
+  @media (min-width: 1200px) and (min-width: 1500px) {
+    #cover video {
+      height: 1300px; } }
+  @media (min-width: 1200px) {
+    #cover #mobile_video_substitute {
+      display: none; } }
+  #cover #titleWrapper {
+    position: absolute;
+    width: 70vw;
+    top: 20vh; }
+    @media (min-width: 1200px) {
+      #cover #titleWrapper {
+        min-height: 700px; } }
+    @media (max-width: 449px) {
+      #cover #titleWrapper {
+        width: 300px;
+        margin-left: calc((100% - 300px)/2); } }
+    @media (min-width: 450px) {
+      #cover #titleWrapper {
+        width: 350px;
+        margin-left: calc((100% - 350px)/2); } }
+    @media (min-width: 600px) {
+      #cover #titleWrapper {
+        width: 600px;
+        margin-left: calc((100% - 600px)/2); } }
+    @media (min-width: 900px) {
+      #cover #titleWrapper {
+        width: 800px;
+        margin-left: calc((100% - 800px)/2); } }
+    @media (min-width: 1200px) {
+      #cover #titleWrapper {
+        width: 800px;
+        margin-left: calc((100% - 800px)/2); } }
+    @media (min-width: 1500px) {
+      #cover #titleWrapper {
+        width: 1500px;
+        margin-left: calc((100% - 1500px)/2); } }
+    #cover #titleWrapper #title {
+      text-align: center;
+      line-height: 100%;
+      z-index: 100;
+      background-image: url(ProfilePicAda.png);
+      background-attachment: fixed;
+      font-weight: bold;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      @media (max-width: 449px) {
+        #cover #titleWrapper #title {
+          background-position: 10px -20px;
+          -webkit-text-stroke: 0.25px black;
+          background-size: 200px auto;
+          font-size: 75px; } }
+      @media (min-width: 450px) {
+        #cover #titleWrapper #title {
+          background-position: 10px -20px;
+          -webkit-text-stroke: 0.5px black;
+          background-size: 200px auto;
+          font-size: 95px; } }
+      @media (min-width: 600px) {
+        #cover #titleWrapper #title {
+          background-size: 500px auto;
+          -webkit-text-stroke: 1px black;
+          background-position: 150px -80px;
+          font-size: 150px; } }
+      @media (min-width: 900px) {
+        #cover #titleWrapper #title {
+          background-position: 150px -80px;
+          font-size: 180px; } }
+      @media (min-width: 1200px) {
+        #cover #titleWrapper #title {
+          -webkit-text-stroke: 0.5px black;
+          background-size: auto 470px;
+          background-position: 270px -30px;
+          font-size: 200px; } }
+      @media (min-width: 1500px) {
+        #cover #titleWrapper #title {
+          font-size: 300px;
+          background-position: 200px -80px;
+          background-size: 1000px auto; } }
+
+/* Empty text element that gets filled by js script  */
+#about {
+  position: relative; }
+  @media (max-width: 449px) {
+    #about {
+      height: 320px; } }
+  @media (min-width: 450px) {
+    #about {
+      height: 250px; } }
+  @media (min-width: 600px) {
+    #about {
+      height: 420px; } }
+  @media (min-width: 900px) {
+    #about {
+      height: 370px; } }
+  @media (min-width: 1200px) {
+    #about {
+      height: 400px; } }
+  @media (min-width: 1500px) {
+    #about {
+      height: 500px; } }
+  #about #dot {
+    animation: blink infinite 1.2s;
+    animation-timing-function: step(2); }
+  #about #aboutTxt {
+    color: #F9CF00;
+    line-height: 160%;
+    text-align: left; }
+    @media (max-width: 449px) {
+      #about #aboutTxt {
+        font-size: 9px;
+        margin-top: 40px;
+        width: 290px;
+        margin-left: calc((100% - 290px)/2); } }
+    @media (min-width: 450px) {
+      #about #aboutTxt {
+        font-size: 9px;
+        margin-top: 40px;
+        width: 450px;
+        margin-left: calc((100% - 450px)/2); } }
+    @media (min-width: 600px) {
+      #about #aboutTxt {
+        font-size: 14px;
+        margin-top: 80px;
+        width: 590px;
+        margin-left: calc((100% - 590px)/2); } }
+    @media (min-width: 900px) {
+      #about #aboutTxt {
+        font-size: 15px;
+        margin-top: 80px;
+        width: 800px;
+        margin-left: calc((100% - 800px)/2); } }
+    @media (min-width: 1200px) {
+      #about #aboutTxt {
+        font-size: 17px;
+        margin-top: 100px;
+        width: 1000px;
+        margin-left: calc((100% - 1000px)/2); } }
+    @media (min-width: 1500px) {
+      #about #aboutTxt {
+        font-size: 22px;
+        margin-top: 120px;
+        width: 1300px;
+        margin-left: calc((100% - 1300px)/2); } }
+  #about #buttonWrapper {
+    position: absolute;
+    bottom: 10%;
+    height: 30px; }
+    @media (max-width: 449px) {
+      #about #buttonWrapper {
+        width: 231px;
+        margin-left: calc((100% - 231px)/2); } }
+    @media (min-width: 450px) {
+      #about #buttonWrapper {
+        width: 420px;
+        margin-left: calc((100% - 420px)/2); } }
+    @media (min-width: 600px) {
+      #about #buttonWrapper {
+        width: 649px;
+        margin-left: calc((100% - 649px)/2); } }
+    @media (min-width: 900px) {
+      #about #buttonWrapper {
+        width: 880px;
+        margin-left: calc((100% - 880px)/2); } }
+    @media (min-width: 1200px) {
+      #about #buttonWrapper {
+        width: 1100px;
+        margin-left: calc((100% - 1100px)/2); } }
+    #about #buttonWrapper .button {
+      position: absolute;
+      bottom: 0px;
+      padding: 5px;
+      text-align: center;
+      color: #f4f4f4;
+      transition: ease-in-out 500ms; }
+      @media (max-width: 449px) {
+        #about #buttonWrapper .button {
+          font-size: 13.5px; } }
+      @media (min-width: 600px) {
+        #about #buttonWrapper .button {
+          font-size: 21px; } }
+      @media (min-width: 900px) {
+        #about #buttonWrapper .button {
+          font-size: 22.5px; } }
+      @media (min-width: 1200px) {
+        #about #buttonWrapper .button {
+          font-size: 25.5px; } }
+      #about #buttonWrapper .button active {
+        border: 0; }
+      #about #buttonWrapper .button:hover {
+        cursor: pointer;
+        color: #f4f4f4;
+        border: solid #f4f4f4 1px;
+        box-shadow: 1px 1px black, 2px 2px #f4f4f4; }
+    #about #buttonWrapper .next {
+      right: 0px; }
+    #about #buttonWrapper .prev {
+      left: 0px; }
+
+#media {
+  position: relative;
+  overflow: hidden;
+  background-image: url("underwater.jpg");
+  /* sea horse */
+  /* tall fish */
+  /* asian fish */
+  /* long fish */
+  /* Scary fish */
+  /* koi fish */ }
+  @media (max-width: 449px) {
+    #media {
+      height: 1000px; } }
+  @media (min-width: 450px) {
+    #media {
+      height: 1500px; } }
+  @media (min-width: 600px) {
+    #media {
+      height: 1800px; } }
+  @media (min-width: 900px) {
+    #media {
+      height: 2000px; } }
+  @media (min-width: 1200px) {
+    #media {
+      height: 2400px; } }
+  @media (min-width: 1500px) {
+    #media {
+      height: 2500px; } }
+  #media .media_wrapper {
+    z-index: 10;
+    height: inherit;
+    width: inherit;
+    position: absolute; }
+    @media (max-width: 449px) {
+      #media .media_wrapper {
+        top: 140px; } }
+    @media (min-width: 450px) {
+      #media .media_wrapper {
+        top: 100px; } }
+    @media (min-width: 600px) {
+      #media .media_wrapper {
+        top: 150px; } }
+    @media (min-width: 1200px) {
+      #media .media_wrapper {
+        top: 100px; } }
+  #media .wrapper {
+    position: relative; }
+    #media .wrapper .text_wrapper {
+      position: relative;
+      z-index: 5;
+      transition: all ease-in-out 800ms;
+      background: rgba(0, 0, 0, 0.6);
+      color: #F9CF00; }
+      @media (max-width: 449px) {
+        #media .wrapper .text_wrapper {
+          height: 180px;
+          margin-top: -180px;
+          font-size: 9px;
+          width: 100%;
+          margin-left: calc((100% - 100%)/2); } }
+      @media (min-width: 600px) {
+        #media .wrapper .text_wrapper {
+          height: 200px;
+          margin-top: -200px;
+          font-size: 11px;
+          width: 500px;
+          margin-left: calc((100% - 500px)/2); } }
+      @media (min-width: 900px) {
+        #media .wrapper .text_wrapper {
+          height: 260px;
+          margin-top: -260px;
+          font-size: 13px;
+          width: 600px;
+          margin-left: calc((100% - 600px)/2); } }
+      @media (min-width: 1200px) {
+        #media .wrapper .text_wrapper {
+          height: 300px;
+          margin-top: -300px;
+          font-size: 15px;
+          width: 800px;
+          margin-left: calc((100% - 800px)/2); } }
+      #media .wrapper .text_wrapper pre {
+        text-align: center; }
+        @media (max-width: 449px) {
+          #media .wrapper .text_wrapper pre {
+            padding-top: 15px; } }
+        @media (min-width: 450px) {
+          #media .wrapper .text_wrapper pre {
+            padding-top: 20px; } }
+        @media (min-width: 600px) {
+          #media .wrapper .text_wrapper pre {
+            padding-top: 30px; } }
+        @media (min-width: 900px) {
+          #media .wrapper .text_wrapper pre {
+            padding-top: 35px; } }
+        @media (min-width: 1200px) {
+          #media .wrapper .text_wrapper pre {
+            padding-top: 40px; } }
+      #media .wrapper .text_wrapper .show_lyrics_button {
+        transition: all ease-in-out 800ms;
+        background: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        text-align: center;
+        color: white;
+        z-index: 10;
+        line-height: 30px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px; }
+        @media (max-width: 449px) {
+          #media .wrapper .text_wrapper .show_lyrics_button {
+            width: 70px;
+            left: calc((100% - 70px)/2);
+            bottom: -20px;
+            height: 20px; } }
+        @media (min-width: 450px) {
+          #media .wrapper .text_wrapper .show_lyrics_button {
+            width: 60px;
+            left: calc((100% - 60px)/2);
+            bottom: -30px;
+            height: 30px; } }
+        @media (min-width: 600px) {
+          #media .wrapper .text_wrapper .show_lyrics_button {
+            width: 90px;
+            left: calc((100% - 90px)/2);
+            bottom: -34px;
+            height: 34px; } }
+        @media (min-width: 900px) {
+          #media .wrapper .text_wrapper .show_lyrics_button {
+            width: 100px;
+            left: calc((100% - 100px)/2);
+            bottom: -36px;
+            height: 36px; } }
+        @media (min-width: 1200px) {
+          #media .wrapper .text_wrapper .show_lyrics_button {
+            width: 120px;
+            left: calc((100% - 120px)/2);
+            bottom: -40px;
+            height: 40px; } }
+        #media .wrapper .text_wrapper .show_lyrics_button:hover {
+          cursor: pointer;
+          background: #F9CF00; }
+          #media .wrapper .text_wrapper .show_lyrics_button:hover p {
+            filter: invert(1); }
+        #media .wrapper .text_wrapper .show_lyrics_button p {
+          transition: all ease-in-out 800ms; }
+          @media (max-width: 449px) {
+            #media .wrapper .text_wrapper .show_lyrics_button p {
+              margin-top: -5px; } }
+    #media .wrapper .iframe {
+      position: relative;
+      z-index: 10; }
+      @media (max-width: 449px) {
+        #media .wrapper .iframe {
+          width: 100vw;
+          height: 250px;
+          margin-top: 50px; } }
+      @media (min-width: 450px) {
+        #media .wrapper .iframe {
+          width: 500px;
+          margin-left: calc((100% - 500px)/2); } }
+      @media (min-width: 600px) {
+        #media .wrapper .iframe {
+          width: 600px;
+          margin-left: calc((100% - 600px)/2);
+          margin-top: 100px; } }
+      @media (min-width: 900px) {
+        #media .wrapper .iframe {
+          height: 450px;
+          width: 800px;
+          margin-left: calc((100% - 800px)/2);
+          margin-top: 100px; } }
+      @media (min-width: 1200px) {
+        #media .wrapper .iframe {
+          width: 1000px;
+          margin-left: calc((100% - 1000px)/2);
+          margin-top: 200px;
+          height: 600px; } }
+  #media .seacreature {
+    position: absolute;
+    z-index: -0;
+    height: 300px; }
+    @media (max-width: 449px) {
+      #media .seacreature {
+        display: none; } }
+    @media (min-width: 450px) {
+      #media .seacreature {
+        display: none; } }
+    @media (min-width: 1200px) {
+      #media .seacreature {
+        display: block; } }
+  #media #fish1 {
+    top: 100px; }
+  #media #fish2 {
+    top: 200px; }
+  #media #fish3 {
+    top: 900px; }
+  #media #fish4 {
+    top: 1070px; }
+  #media #fish5 {
+    top: 651px; }
+  #media #fish6wrapper {
+    position: absolute;
+    bottom: 400px;
+    height: 200px;
+    width: 400px;
+    left: calc((100% - 400px)/2); }
+    #media #fish6wrapper #fish6 {
+      transform: rotate(40deg);
+      position: absolute;
+      height: 300px; }
+  #media #grass {
+    position: absolute;
+    bottom: 0;
+    z-index: 9; }
+    @media (max-width: 449px) {
+      #media #grass {
+        width: 150vw; } }
+    @media (min-width: 1500px) {
+      #media #grass {
+        width: 100vw; } }
+
+#other_projects {
+  height: auto; }
+
+.above_content_wrapper {
+  position: absolute;
+  left: 0; }
+  @media (max-width: 449px) {
+    .above_content_wrapper {
+      top: -30px; } }
+  @media (min-width: 450px) {
+    .above_content_wrapper {
+      top: -80px; } }
+  @media (min-width: 1200px) {
+    .above_content_wrapper {
+      top: -100px; } }
+
+#other_projects_title {
+  width: 100vw;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  color: #F9CF00; }
+  @media (max-width: 449px) {
+    #other_projects_title {
+      top: -100px;
+      font-size: 30px; } }
+  @media (min-width: 450px) {
+    #other_projects_title {
+      top: -150px; } }
+  @media (min-width: 600px) {
+    #other_projects_title {
+      top: -250px;
+      width: 300px;
+      margin-left: calc((100% - 300px)/2);
+      font-size: 50px; } }
+  @media (min-width: 900px) {
+    #other_projects_title {
+      width: 350px;
+      margin-left: calc((100% - 350px)/2);
+      font-size: 60px;
+      top: -250px;
+      height: 200px; } }
+
+#menu_wrapper {
+  position: absolute;
+  top: 0;
+  left: 0; }
+  @media (max-width: 449px) {
+    #menu_wrapper {
+      width: 90vw;
+      left: 5vw; } }
+  @media (min-width: 450px) {
+    #menu_wrapper {
+      width: 80vw;
+      left: 10vw;
+      z-index: 10; } }
+  #menu_wrapper .menu {
+    z-index: 10;
+    color: #f4f4f4;
+    text-align: center;
+    width: 33%;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    z-index: 11;
+    float: left; }
+    #menu_wrapper .menu:hover {
+      color: #F9CF00; }
+    @media (max-width: 449px) {
+      #menu_wrapper .menu {
+        font-size: 8px; } }
+    @media (min-width: 600px) {
+      #menu_wrapper .menu {
+        font-size: 16px; } }
+    @media (min-width: 900px) {
+      #menu_wrapper .menu {
+        font-size: 24px; } }
+    @media (min-width: 1200px) {
+      #menu_wrapper .menu {
+        font-size: 30px; } }
+  #menu_wrapper .active {
+    color: #F9CF00; }
+    @media (max-width: 449px) {
+      #menu_wrapper .active {
+        font-size: 9px; } }
+    @media (min-width: 600px) {
+      #menu_wrapper .active {
+        font-size: 18px; } }
+    @media (min-width: 900px) {
+      #menu_wrapper .active {
+        font-size: 26px; } }
+    @media (min-width: 1200px) {
+      #menu_wrapper .active {
+        font-size: 32px; } }
+  @media (min-width: 1200px) {
+    #menu_wrapper .two {
+      padding-top: 25px;
+      height: 55px; }
+    #menu_wrapper .one, #menu_wrapper .three {
+      padding-top: 10px;
+      height: 70px; } }
+
+#other_projects_content {
+  width: 80vw;
+  margin-left: 10vw; }
+  @media (max-width: 449px) {
+    #other_projects_content {
+      margin-top: 100px;
+      padding-top: 30vw; } }
+  @media (min-width: 600px) {
+    #other_projects_content {
+      margin-top: 200px;
+      padding-top: 200px; } }
+  @media (min-width: 1500px) {
+    #other_projects_content {
+      margin-top: 200px; } }
+  #other_projects_content * {
+    z-index: 10; }
+  @media (max-width: 449px) {
+    #other_projects_content {
+      margin-bottom: -300px; } }
+  @media (min-width: 600px) {
+    #other_projects_content {
+      margin-bottom: 550px; } }
+  @media (min-width: 900px) {
+    #other_projects_content {
+      margin-bottom: 650px; } }
+  @media (min-width: 1200px) {
+    #other_projects_content {
+      margin-bottom: 650px; } }
+  @media (max-width: 449px) {
+    #other_projects_content #audio_engineer {
+      height: 1500px; } }
+  @media (min-width: 600px) {
+    #other_projects_content #audio_engineer {
+      height: 1000px; } }
+  @media (min-width: 900px) {
+    #other_projects_content #audio_engineer {
+      height: 1000px; } }
+  @media (min-width: 1200px) {
+    #other_projects_content #audio_engineer {
+      height: 1200px; } }
+  @media (min-width: 1500px) {
+    #other_projects_content #audio_engineer {
+      height: 1400px; } }
+  @media (min-width: 1500px) {
+    #other_projects_content #bands {
+      height: 1300px; } }
+  #other_projects_content #bands, #other_projects_content #audio_engineer {
+    width: inherit; }
+    @media (max-width: 449px) {
+      #other_projects_content #bands #fro, #other_projects_content #audio_engineer #fro {
+        margin-top: 150px; } }
+    @media (min-width: 600px) {
+      #other_projects_content #bands #fro, #other_projects_content #audio_engineer #fro {
+        margin-top: 0; } }
+    @media (min-width: 900px) {
+      #other_projects_content #bands #fro, #other_projects_content #audio_engineer #fro {
+        margin-left: 0; } }
+    @media (min-width: 1200px) {
+      #other_projects_content #bands #fro, #other_projects_content #audio_engineer #fro {
+        margin-top: 0px; } }
+    @media (min-width: 1500px) {
+      #other_projects_content #bands #fro, #other_projects_content #audio_engineer #fro {
+        margin-top: 0;
+        margin-bottom: 800px; } }
+    @media (max-width: 449px) {
+      #other_projects_content #bands #fro .content, #other_projects_content #audio_engineer #fro .content {
+        margin-top: 100px;
+        margin-left: -10vw; } }
+    @media (min-width: 600px) {
+      #other_projects_content #bands #fro .content, #other_projects_content #audio_engineer #fro .content {
+        margin-left: -10vw;
+        margin-top: 0; } }
+    @media (min-width: 900px) {
+      #other_projects_content #bands #fro .content, #other_projects_content #audio_engineer #fro .content {
+        margin-left: 0; } }
+    @media (max-width: 449px) {
+      #other_projects_content #bands #nok_wrapper, #other_projects_content #audio_engineer #nok_wrapper {
+        height: 100vw !important; } }
+    @media (min-width: 600px) {
+      #other_projects_content #bands .nok_text, #other_projects_content #audio_engineer .nok_text {
+        margin-top: 0; } }
+    #other_projects_content #bands #yng_voices, #other_projects_content #audio_engineer #yng_voices {
+      margin-top: 150px; }
+      @media (min-width: 1500px) {
+        #other_projects_content #bands #yng_voices, #other_projects_content #audio_engineer #yng_voices {
+          margin-top: 50px; } }
+    #other_projects_content #bands .band, #other_projects_content #bands .engineer, #other_projects_content #audio_engineer .band, #other_projects_content #audio_engineer .engineer {
+      position: relative;
+      width: 100%; }
+      @media (max-width: 449px) {
+        #other_projects_content #bands .band, #other_projects_content #bands .engineer, #other_projects_content #audio_engineer .band, #other_projects_content #audio_engineer .engineer {
+          margin-bottom: 800px; } }
+      @media (min-width: 600px) {
+        #other_projects_content #bands .band, #other_projects_content #bands .engineer, #other_projects_content #audio_engineer .band, #other_projects_content #audio_engineer .engineer {
+          margin-bottom: 500px; } }
+      @media (min-width: 900px) {
+        #other_projects_content #bands .band, #other_projects_content #bands .engineer, #other_projects_content #audio_engineer .band, #other_projects_content #audio_engineer .engineer {
+          margin-bottom: 550px; } }
+      @media (min-width: 1200px) {
+        #other_projects_content #bands .band, #other_projects_content #bands .engineer, #other_projects_content #audio_engineer .band, #other_projects_content #audio_engineer .engineer {
+          margin-bottom: 650px; } }
+      @media (max-width: 449px) {
+        #other_projects_content #bands .band #yv_text, #other_projects_content #bands .engineer #yv_text, #other_projects_content #audio_engineer .band #yv_text, #other_projects_content #audio_engineer .engineer #yv_text {
+          height: 300px; } }
+      @media (min-width: 600px) {
+        #other_projects_content #bands .band #yv_text, #other_projects_content #bands .engineer #yv_text, #other_projects_content #audio_engineer .band #yv_text, #other_projects_content #audio_engineer .engineer #yv_text {
+          height: 448px; } }
+      @media (min-width: 900px) {
+        #other_projects_content #bands .band #yv_text, #other_projects_content #bands .engineer #yv_text, #other_projects_content #audio_engineer .band #yv_text, #other_projects_content #audio_engineer .engineer #yv_text {
+          height: 448px; } }
+      @media (min-width: 1200px) {
+        #other_projects_content #bands .band #yv_text, #other_projects_content #bands .engineer #yv_text, #other_projects_content #audio_engineer .band #yv_text, #other_projects_content #audio_engineer .engineer #yv_text {
+          height: 420px; } }
+      @media (min-width: 1500px) {
+        #other_projects_content #bands .band #yv_text, #other_projects_content #bands .engineer #yv_text, #other_projects_content #audio_engineer .band #yv_text, #other_projects_content #audio_engineer .engineer #yv_text {
+          height: 600px; } }
+      #other_projects_content #bands .band .projects_text, #other_projects_content #bands .engineer .projects_text, #other_projects_content #audio_engineer .band .projects_text, #other_projects_content #audio_engineer .engineer .projects_text {
+        display: inline-block;
+        text-align: center;
+        float: left;
+        color: #F9CF00; }
+        #other_projects_content #bands .band .projects_text h2, #other_projects_content #bands .engineer .projects_text h2, #other_projects_content #audio_engineer .band .projects_text h2, #other_projects_content #audio_engineer .engineer .projects_text h2 {
+          font-weight: bold; }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .projects_text, #other_projects_content #bands .engineer .projects_text, #other_projects_content #audio_engineer .band .projects_text, #other_projects_content #audio_engineer .engineer .projects_text {
+            width: 100vw;
+            margin-top: -480px;
+            height: 300px; } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .projects_text, #other_projects_content #bands .engineer .projects_text, #other_projects_content #audio_engineer .band .projects_text, #other_projects_content #audio_engineer .engineer .projects_text {
+            margin-top: 0;
+            margin-bottom: 0;
+            width: 50%;
+            height: 320px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .projects_text, #other_projects_content #bands .engineer .projects_text, #other_projects_content #audio_engineer .band .projects_text, #other_projects_content #audio_engineer .engineer .projects_text {
+            height: 320px; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .projects_text, #other_projects_content #bands .engineer .projects_text, #other_projects_content #audio_engineer .band .projects_text, #other_projects_content #audio_engineer .engineer .projects_text {
+            height: 420px;
+            font-size: 17px; } }
+        @media (min-width: 1500px) {
+          #other_projects_content #bands .band .projects_text, #other_projects_content #bands .engineer .projects_text, #other_projects_content #audio_engineer .band .projects_text, #other_projects_content #audio_engineer .engineer .projects_text {
+            height: 600px; } }
+      @media (max-width: 449px) {
+        #other_projects_content #bands .band .fro_text h2, #other_projects_content #bands .engineer .fro_text h2, #other_projects_content #audio_engineer .band .fro_text h2, #other_projects_content #audio_engineer .engineer .fro_text h2 {
+          font-size: 27px;
+          margin-top: 20px;
+          width: 100%; } }
+      @media (min-width: 600px) {
+        #other_projects_content #bands .band .fro_text h2, #other_projects_content #bands .engineer .fro_text h2, #other_projects_content #audio_engineer .band .fro_text h2, #other_projects_content #audio_engineer .engineer .fro_text h2 {
+          font-size: 42px;
+          margin-top: 20px;
+          width: 100%; } }
+      @media (min-width: 900px) {
+        #other_projects_content #bands .band .fro_text h2, #other_projects_content #bands .engineer .fro_text h2, #other_projects_content #audio_engineer .band .fro_text h2, #other_projects_content #audio_engineer .engineer .fro_text h2 {
+          font-size: 45px;
+          margin-top: 10px;
+          width: 340px; } }
+      @media (min-width: 1200px) {
+        #other_projects_content #bands .band .fro_text h2, #other_projects_content #bands .engineer .fro_text h2, #other_projects_content #audio_engineer .band .fro_text h2, #other_projects_content #audio_engineer .engineer .fro_text h2 {
+          font-size: 51px;
+          margin-top: 50px;
+          width: 500px; } }
+      @media (min-width: 1500px) {
+        #other_projects_content #bands .band .fro_text h2, #other_projects_content #bands .engineer .fro_text h2, #other_projects_content #audio_engineer .band .fro_text h2, #other_projects_content #audio_engineer .engineer .fro_text h2 {
+          font-size: 66px;
+          margin-top: 60px;
+          width: 500px;
+          margin-left: calc((100% - 500px)/2); } }
+      #other_projects_content #bands .band .fro_text p, #other_projects_content #bands .engineer .fro_text p, #other_projects_content #audio_engineer .band .fro_text p, #other_projects_content #audio_engineer .engineer .fro_text p {
+        line-height: 150%; }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .fro_text p, #other_projects_content #bands .engineer .fro_text p, #other_projects_content #audio_engineer .band .fro_text p, #other_projects_content #audio_engineer .engineer .fro_text p {
+            font-size: 9.9px;
+            margin-top: 10px;
+            margin-bottom: 200px;
+            width: 290px;
+            margin-left: calc((100% - 290px)/2); } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .fro_text p, #other_projects_content #bands .engineer .fro_text p, #other_projects_content #audio_engineer .band .fro_text p, #other_projects_content #audio_engineer .engineer .fro_text p {
+            font-size: 16.1px;
+            margin-top: 30px;
+            margin-left: 50px;
+            width: 390px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .fro_text p, #other_projects_content #bands .engineer .fro_text p, #other_projects_content #audio_engineer .band .fro_text p, #other_projects_content #audio_engineer .engineer .fro_text p {
+            font-size: 16.95px;
+            margin-top: 20px;
+            margin-left: -35px;
+            width: 420px; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .fro_text p, #other_projects_content #bands .engineer .fro_text p, #other_projects_content #audio_engineer .band .fro_text p, #other_projects_content #audio_engineer .engineer .fro_text p {
+            font-size: 20.4px;
+            margin-top: 30px;
+            width: 500px; } }
+        @media (min-width: 1500px) {
+          #other_projects_content #bands .band .fro_text p, #other_projects_content #bands .engineer .fro_text p, #other_projects_content #audio_engineer .band .fro_text p, #other_projects_content #audio_engineer .engineer .fro_text p {
+            font-size: 26.4px;
+            margin-top: 20px;
+            width: 580px;
+            margin-left: calc((100% - 580px)/2); } }
+      #other_projects_content #bands .band .nok_text, #other_projects_content #bands .engineer .nok_text, #other_projects_content #audio_engineer .band .nok_text, #other_projects_content #audio_engineer .engineer .nok_text {
+        float: left; }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .nok_text, #other_projects_content #bands .engineer .nok_text, #other_projects_content #audio_engineer .band .nok_text, #other_projects_content #audio_engineer .engineer .nok_text {
+            margin-left: -30px; } }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .nok_text h2, #other_projects_content #bands .engineer .nok_text h2, #other_projects_content #audio_engineer .band .nok_text h2, #other_projects_content #audio_engineer .engineer .nok_text h2 {
+            margin-top: 250px;
+            font-size: 28px; } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .nok_text h2, #other_projects_content #bands .engineer .nok_text h2, #other_projects_content #audio_engineer .band .nok_text h2, #other_projects_content #audio_engineer .engineer .nok_text h2 {
+            font-size: 35px;
+            width: 500px;
+            margin-left: -50px;
+            margin-top: 20px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .nok_text h2, #other_projects_content #bands .engineer .nok_text h2, #other_projects_content #audio_engineer .band .nok_text h2, #other_projects_content #audio_engineer .engineer .nok_text h2 {
+            font-size: 39px;
+            width: 560px;
+            margin-left: 0;
+            margin-top: 20px; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .nok_text h2, #other_projects_content #bands .engineer .nok_text h2, #other_projects_content #audio_engineer .band .nok_text h2, #other_projects_content #audio_engineer .engineer .nok_text h2 {
+            font-size: 51px;
+            margin-top: 30px; } }
+        @media (min-width: 1500px) {
+          #other_projects_content #bands .band .nok_text h2, #other_projects_content #bands .engineer .nok_text h2, #other_projects_content #audio_engineer .band .nok_text h2, #other_projects_content #audio_engineer .engineer .nok_text h2 {
+            font-size: 66px;
+            margin-top: 150px;
+            width: 900px;
+            margin-left: 30px; } }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .nok_text p, #other_projects_content #bands .engineer .nok_text p, #other_projects_content #audio_engineer .band .nok_text p, #other_projects_content #audio_engineer .engineer .nok_text p {
+            font-size: 12.42px;
+            margin-top: 30px;
+            width: 280px;
+            margin-left: calc((100% - 280px)/2); } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .nok_text p, #other_projects_content #bands .engineer .nok_text p, #other_projects_content #audio_engineer .band .nok_text p, #other_projects_content #audio_engineer .engineer .nok_text p {
+            font-size: 18.06px;
+            width: 380px;
+            margin-top: 35px;
+            margin-left: -40px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .nok_text p, #other_projects_content #bands .engineer .nok_text p, #other_projects_content #audio_engineer .band .nok_text p, #other_projects_content #audio_engineer .engineer .nok_text p {
+            font-size: 20.1px;
+            width: 480px;
+            margin-top: 40px;
+            margin-left: 5%; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .nok_text p, #other_projects_content #bands .engineer .nok_text p, #other_projects_content #audio_engineer .band .nok_text p, #other_projects_content #audio_engineer .engineer .nok_text p {
+            font-size: 20.4px;
+            margin-top: 30px;
+            margin-left: 10%;
+            width: 500px; } }
+        @media (min-width: 1500px) {
+          #other_projects_content #bands .band .nok_text p, #other_projects_content #bands .engineer .nok_text p, #other_projects_content #audio_engineer .band .nok_text p, #other_projects_content #audio_engineer .engineer .nok_text p {
+            font-size: 27.5px;
+            margin-top: 50px;
+            width: 800px; } }
+      #other_projects_content #bands .band .yv_text, #other_projects_content #bands .engineer .yv_text, #other_projects_content #audio_engineer .band .yv_text, #other_projects_content #audio_engineer .engineer .yv_text {
+        text-align: left; }
+        #other_projects_content #bands .band .yv_text h2, #other_projects_content #bands .engineer .yv_text h2, #other_projects_content #audio_engineer .band .yv_text h2, #other_projects_content #audio_engineer .engineer .yv_text h2 {
+          margin-left: 10px;
+          margin-top: 10px; }
+          @media (max-width: 449px) {
+            #other_projects_content #bands .band .yv_text h2, #other_projects_content #bands .engineer .yv_text h2, #other_projects_content #audio_engineer .band .yv_text h2, #other_projects_content #audio_engineer .engineer .yv_text h2 {
+              margin-top: 0px;
+              margin-left: -10vw;
+              font-size: 22.5px; } }
+          @media (min-width: 600px) {
+            #other_projects_content #bands .band .yv_text h2, #other_projects_content #bands .engineer .yv_text h2, #other_projects_content #audio_engineer .band .yv_text h2, #other_projects_content #audio_engineer .engineer .yv_text h2 {
+              font-size: 42px;
+              width: 400px; } }
+          @media (min-width: 900px) {
+            #other_projects_content #bands .band .yv_text h2, #other_projects_content #bands .engineer .yv_text h2, #other_projects_content #audio_engineer .band .yv_text h2, #other_projects_content #audio_engineer .engineer .yv_text h2 {
+              font-size: 45px;
+              width: 400px; } }
+          @media (min-width: 1200px) {
+            #other_projects_content #bands .band .yv_text h2, #other_projects_content #bands .engineer .yv_text h2, #other_projects_content #audio_engineer .band .yv_text h2, #other_projects_content #audio_engineer .engineer .yv_text h2 {
+              font-size: 51px;
+              width: 400px; } }
+          @media (min-width: 1500px) {
+            #other_projects_content #bands .band .yv_text h2, #other_projects_content #bands .engineer .yv_text h2, #other_projects_content #audio_engineer .band .yv_text h2, #other_projects_content #audio_engineer .engineer .yv_text h2 {
+              font-size: 66px;
+              width: 400px; } }
+        #other_projects_content #bands .band .yv_text h3, #other_projects_content #bands .engineer .yv_text h3, #other_projects_content #audio_engineer .band .yv_text h3, #other_projects_content #audio_engineer .engineer .yv_text h3 {
+          margin-left: 10px; }
+          @media (max-width: 449px) {
+            #other_projects_content #bands .band .yv_text h3, #other_projects_content #bands .engineer .yv_text h3, #other_projects_content #audio_engineer .band .yv_text h3, #other_projects_content #audio_engineer .engineer .yv_text h3 {
+              font-size: 13.5px;
+              width: 200px;
+              margin-left: -10vw; } }
+          @media (min-width: 600px) {
+            #other_projects_content #bands .band .yv_text h3, #other_projects_content #bands .engineer .yv_text h3, #other_projects_content #audio_engineer .band .yv_text h3, #other_projects_content #audio_engineer .engineer .yv_text h3 {
+              font-size: 21px;
+              width: 300px; } }
+          @media (min-width: 900px) {
+            #other_projects_content #bands .band .yv_text h3, #other_projects_content #bands .engineer .yv_text h3, #other_projects_content #audio_engineer .band .yv_text h3, #other_projects_content #audio_engineer .engineer .yv_text h3 {
+              font-size: 22.5px;
+              width: 400px; } }
+          @media (min-width: 1200px) {
+            #other_projects_content #bands .band .yv_text h3, #other_projects_content #bands .engineer .yv_text h3, #other_projects_content #audio_engineer .band .yv_text h3, #other_projects_content #audio_engineer .engineer .yv_text h3 {
+              font-size: 34px;
+              width: 450px; } }
+          @media (min-width: 1500px) {
+            #other_projects_content #bands .band .yv_text h3, #other_projects_content #bands .engineer .yv_text h3, #other_projects_content #audio_engineer .band .yv_text h3, #other_projects_content #audio_engineer .engineer .yv_text h3 {
+              font-size: 44px;
+              width: 400px; } }
+        #other_projects_content #bands .band .yv_text p, #other_projects_content #bands .engineer .yv_text p, #other_projects_content #audio_engineer .band .yv_text p, #other_projects_content #audio_engineer .engineer .yv_text p {
+          margin-left: 10px; }
+          @media (max-width: 449px) {
+            #other_projects_content #bands .band .yv_text p, #other_projects_content #bands .engineer .yv_text p, #other_projects_content #audio_engineer .band .yv_text p, #other_projects_content #audio_engineer .engineer .yv_text p {
+              margin-top: 20px;
+              font-size: 12.06px;
+              margin-left: 0;
+              width: 300px;
+              margin-left: calc((100% - 300px)/2);
+              margin-left: -10vw; } }
+          @media (min-width: 600px) {
+            #other_projects_content #bands .band .yv_text p, #other_projects_content #bands .engineer .yv_text p, #other_projects_content #audio_engineer .band .yv_text p, #other_projects_content #audio_engineer .engineer .yv_text p {
+              font-size: 18.76px;
+              margin-top: 30px;
+              width: 350px; } }
+          @media (min-width: 900px) {
+            #other_projects_content #bands .band .yv_text p, #other_projects_content #bands .engineer .yv_text p, #other_projects_content #audio_engineer .band .yv_text p, #other_projects_content #audio_engineer .engineer .yv_text p {
+              font-size: 21.45px;
+              width: 400px; } }
+          @media (min-width: 1200px) {
+            #other_projects_content #bands .band .yv_text p, #other_projects_content #bands .engineer .yv_text p, #other_projects_content #audio_engineer .band .yv_text p, #other_projects_content #audio_engineer .engineer .yv_text p {
+              font-size: 21.08px;
+              width: 490px; } }
+          @media (min-width: 1500px) {
+            #other_projects_content #bands .band .yv_text p, #other_projects_content #bands .engineer .yv_text p, #other_projects_content #audio_engineer .band .yv_text p, #other_projects_content #audio_engineer .engineer .yv_text p {
+              font-size: 29.7px;
+              margin-top: 13px;
+              width: 680px; } }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .yv_text #yng_wrapper, #other_projects_content #bands .engineer .yv_text #yng_wrapper, #other_projects_content #audio_engineer .band .yv_text #yng_wrapper, #other_projects_content #audio_engineer .engineer .yv_text #yng_wrapper {
+            height: 300px; } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .yv_text #yng_wrapper, #other_projects_content #bands .engineer .yv_text #yng_wrapper, #other_projects_content #audio_engineer .band .yv_text #yng_wrapper, #other_projects_content #audio_engineer .engineer .yv_text #yng_wrapper {
+            height: 448px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .yv_text #yng_wrapper, #other_projects_content #bands .engineer .yv_text #yng_wrapper, #other_projects_content #audio_engineer .band .yv_text #yng_wrapper, #other_projects_content #audio_engineer .engineer .yv_text #yng_wrapper {
+            height: 448px; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .yv_text #yng_wrapper, #other_projects_content #bands .engineer .yv_text #yng_wrapper, #other_projects_content #audio_engineer .band .yv_text #yng_wrapper, #other_projects_content #audio_engineer .engineer .yv_text #yng_wrapper {
+            height: 420px; } }
+        @media (min-width: 1500px) {
+          #other_projects_content #bands .band .yv_text #yng_wrapper, #other_projects_content #bands .engineer .yv_text #yng_wrapper, #other_projects_content #audio_engineer .band .yv_text #yng_wrapper, #other_projects_content #audio_engineer .engineer .yv_text #yng_wrapper {
+            height: 600px; } }
+      #other_projects_content #bands .band .SMA_text, #other_projects_content #bands .engineer .SMA_text, #other_projects_content #audio_engineer .band .SMA_text, #other_projects_content #audio_engineer .engineer .SMA_text {
+        line-height: 180%; }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .SMA_text, #other_projects_content #bands .engineer .SMA_text, #other_projects_content #audio_engineer .band .SMA_text, #other_projects_content #audio_engineer .engineer .SMA_text {
+            width: 320px;
+            margin-left: calc((100% - 320px)/2);
+            margin-top: -50px;
+            height: 200px; } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .SMA_text, #other_projects_content #bands .engineer .SMA_text, #other_projects_content #audio_engineer .band .SMA_text, #other_projects_content #audio_engineer .engineer .SMA_text {
+            width: 600px;
+            margin-left: calc((100% - 600px)/2);
+            margin-top: 100px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .SMA_text, #other_projects_content #bands .engineer .SMA_text, #other_projects_content #audio_engineer .band .SMA_text, #other_projects_content #audio_engineer .engineer .SMA_text {
+            width: 900px;
+            margin-left: calc((100% - 900px)/2);
+            height: 300px;
+            margin-top: 120px; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .SMA_text, #other_projects_content #bands .engineer .SMA_text, #other_projects_content #audio_engineer .band .SMA_text, #other_projects_content #audio_engineer .engineer .SMA_text {
+            width: 900px;
+            margin-left: calc((100% - 900px)/2);
+            height: 300px;
+            margin-top: 50px; } }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .SMA_text h2, #other_projects_content #bands .engineer .SMA_text h2, #other_projects_content #audio_engineer .band .SMA_text h2, #other_projects_content #audio_engineer .engineer .SMA_text h2 {
+            font-size: 27px;
+            width: 100%;
+            margin-bottom: 30px; } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .SMA_text h2, #other_projects_content #bands .engineer .SMA_text h2, #other_projects_content #audio_engineer .band .SMA_text h2, #other_projects_content #audio_engineer .engineer .SMA_text h2 {
+            font-size: 33.6px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .SMA_text h2, #other_projects_content #bands .engineer .SMA_text h2, #other_projects_content #audio_engineer .band .SMA_text h2, #other_projects_content #audio_engineer .engineer .SMA_text h2 {
+            font-size: 36px; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .SMA_text h2, #other_projects_content #bands .engineer .SMA_text h2, #other_projects_content #audio_engineer .band .SMA_text h2, #other_projects_content #audio_engineer .engineer .SMA_text h2 {
+            font-size: 40.8px; } }
+        @media (min-width: 1500px) {
+          #other_projects_content #bands .band .SMA_text h2, #other_projects_content #bands .engineer .SMA_text h2, #other_projects_content #audio_engineer .band .SMA_text h2, #other_projects_content #audio_engineer .engineer .SMA_text h2 {
+            font-size: 52.8px; } }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .SMA_text p, #other_projects_content #bands .engineer .SMA_text p, #other_projects_content #audio_engineer .band .SMA_text p, #other_projects_content #audio_engineer .engineer .SMA_text p {
+            line-height: 160%;
+            margin-top: 0px;
+            font-size: 11.25px; } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .SMA_text p, #other_projects_content #bands .engineer .SMA_text p, #other_projects_content #audio_engineer .band .SMA_text p, #other_projects_content #audio_engineer .engineer .SMA_text p {
+            margin-top: 20px;
+            font-size: 17.5px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .SMA_text p, #other_projects_content #bands .engineer .SMA_text p, #other_projects_content #audio_engineer .band .SMA_text p, #other_projects_content #audio_engineer .engineer .SMA_text p {
+            margin-top: 20px;
+            font-size: 18.75px; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .SMA_text p, #other_projects_content #bands .engineer .SMA_text p, #other_projects_content #audio_engineer .band .SMA_text p, #other_projects_content #audio_engineer .engineer .SMA_text p {
+            margin-top: 20px;
+            font-size: 21.25px; } }
+        @media (min-width: 1500px) {
+          #other_projects_content #bands .band .SMA_text p, #other_projects_content #bands .engineer .SMA_text p, #other_projects_content #audio_engineer .band .SMA_text p, #other_projects_content #audio_engineer .engineer .SMA_text p {
+            margin-top: 50px;
+            font-size: 27.5px;
+            width: 1000px;
+            margin-left: calc((100% - 1000px)/2); } }
+      #other_projects_content #bands .band .content, #other_projects_content #bands .engineer .content, #other_projects_content #audio_engineer .band .content, #other_projects_content #audio_engineer .engineer .content {
+        width: 100%; }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .band .content #SMA_wrapper, #other_projects_content #bands .engineer .content #SMA_wrapper, #other_projects_content #audio_engineer .band .content #SMA_wrapper, #other_projects_content #audio_engineer .engineer .content #SMA_wrapper {
+            width: 100vw;
+            margin-left: calc((100% - 100vw)/2);
+            margin-top: -400px; } }
+        @media (min-width: 600px) {
+          #other_projects_content #bands .band .content #SMA_wrapper, #other_projects_content #bands .engineer .content #SMA_wrapper, #other_projects_content #audio_engineer .band .content #SMA_wrapper, #other_projects_content #audio_engineer .engineer .content #SMA_wrapper {
+            width: 600px;
+            margin-left: calc((100% - 600px)/2);
+            margin-top: 100px; } }
+        @media (min-width: 900px) {
+          #other_projects_content #bands .band .content #SMA_wrapper, #other_projects_content #bands .engineer .content #SMA_wrapper, #other_projects_content #audio_engineer .band .content #SMA_wrapper, #other_projects_content #audio_engineer .engineer .content #SMA_wrapper {
+            width: 900px;
+            margin-left: calc((100% - 900px)/2);
+            margin-top: 100px; } }
+        @media (min-width: 1200px) {
+          #other_projects_content #bands .band .content #SMA_wrapper, #other_projects_content #bands .engineer .content #SMA_wrapper, #other_projects_content #audio_engineer .band .content #SMA_wrapper, #other_projects_content #audio_engineer .engineer .content #SMA_wrapper {
+            width: 900px;
+            margin-left: calc((100% - 900px)/2); } }
+        #other_projects_content #bands .band .content #SMA_wrapper iframe, #other_projects_content #bands .engineer .content #SMA_wrapper iframe, #other_projects_content #audio_engineer .band .content #SMA_wrapper iframe, #other_projects_content #audio_engineer .engineer .content #SMA_wrapper iframe {
+          width: inherit; }
+        #other_projects_content #bands .band .content .wrapper, #other_projects_content #bands .engineer .content .wrapper, #other_projects_content #audio_engineer .band .content .wrapper, #other_projects_content #audio_engineer .engineer .content .wrapper {
+          position: relative;
+          display: inline-block;
+          float: left;
+          width: 50%; }
+          @media (max-width: 449px) {
+            #other_projects_content #bands .band .content .wrapper, #other_projects_content #bands .engineer .content .wrapper, #other_projects_content #audio_engineer .band .content .wrapper, #other_projects_content #audio_engineer .engineer .content .wrapper {
+              height: 300px; } }
+          @media (min-width: 600px) {
+            #other_projects_content #bands .band .content .wrapper, #other_projects_content #bands .engineer .content .wrapper, #other_projects_content #audio_engineer .band .content .wrapper, #other_projects_content #audio_engineer .engineer .content .wrapper {
+              height: 320px; } }
+          @media (min-width: 900px) {
+            #other_projects_content #bands .band .content .wrapper, #other_projects_content #bands .engineer .content .wrapper, #other_projects_content #audio_engineer .band .content .wrapper, #other_projects_content #audio_engineer .engineer .content .wrapper {
+              height: 320px; } }
+          @media (min-width: 1200px) {
+            #other_projects_content #bands .band .content .wrapper, #other_projects_content #bands .engineer .content .wrapper, #other_projects_content #audio_engineer .band .content .wrapper, #other_projects_content #audio_engineer .engineer .content .wrapper {
+              height: 420px; } }
+          @media (min-width: 1500px) {
+            #other_projects_content #bands .band .content .wrapper, #other_projects_content #bands .engineer .content .wrapper, #other_projects_content #audio_engineer .band .content .wrapper, #other_projects_content #audio_engineer .engineer .content .wrapper {
+              height: 600px; } }
+          @media (max-width: 449px) {
+            #other_projects_content #bands .band .content .wrapper .NOK, #other_projects_content #bands .engineer .content .wrapper .NOK, #other_projects_content #audio_engineer .band .content .wrapper .NOK, #other_projects_content #audio_engineer .engineer .content .wrapper .NOK {
+              right: -50vw;
+              width: 100vw;
+              height: 100vw !important; } }
+          @media (min-width: 600px) {
+            #other_projects_content #bands .band .content .wrapper .NOK, #other_projects_content #bands .engineer .content .wrapper .NOK, #other_projects_content #audio_engineer .band .content .wrapper .NOK, #other_projects_content #audio_engineer .engineer .content .wrapper .NOK {
+              right: -10vw; } }
+          @media (min-width: 900px) {
+            #other_projects_content #bands .band .content .wrapper .NOK, #other_projects_content #bands .engineer .content .wrapper .NOK, #other_projects_content #audio_engineer .band .content .wrapper .NOK, #other_projects_content #audio_engineer .engineer .content .wrapper .NOK {
+              right: 0;
+              height: 600px; } }
+          @media (min-width: 1500px) {
+            #other_projects_content #bands .band .content .wrapper .NOK, #other_projects_content #bands .engineer .content .wrapper .NOK, #other_projects_content #audio_engineer .band .content .wrapper .NOK, #other_projects_content #audio_engineer .engineer .content .wrapper .NOK {
+              height: 600px; } }
+          #other_projects_content #bands .band .content .wrapper .engineer_img, #other_projects_content #bands .engineer .content .wrapper .engineer_img, #other_projects_content #audio_engineer .band .content .wrapper .engineer_img, #other_projects_content #audio_engineer .engineer .content .wrapper .engineer_img {
+            right: 0px;
+            bottom: 0;
+            height: 420px; }
+          #other_projects_content #bands .band .content .wrapper .SMA_vid, #other_projects_content #bands .engineer .content .wrapper .SMA_vid, #other_projects_content #audio_engineer .band .content .wrapper .SMA_vid, #other_projects_content #audio_engineer .engineer .content .wrapper .SMA_vid {
+            height: 420px; }
+            @media (min-width: 1500px) {
+              #other_projects_content #bands .band .content .wrapper .SMA_vid, #other_projects_content #bands .engineer .content .wrapper .SMA_vid, #other_projects_content #audio_engineer .band .content .wrapper .SMA_vid, #other_projects_content #audio_engineer .engineer .content .wrapper .SMA_vid {
+                height: 600px; } }
+          #other_projects_content #bands .band .content .wrapper .bilde2, #other_projects_content #bands .engineer .content .wrapper .bilde2, #other_projects_content #audio_engineer .band .content .wrapper .bilde2, #other_projects_content #audio_engineer .engineer .content .wrapper .bilde2 {
+            opacity: 0;
+            transition: 1.25s ease-in-out; }
+          #other_projects_content #bands .band .content .wrapper .bilde1, #other_projects_content #bands .engineer .content .wrapper .bilde1, #other_projects_content #audio_engineer .band .content .wrapper .bilde1, #other_projects_content #audio_engineer .engineer .content .wrapper .bilde1 {
+            opacity: 1;
+            transition: 1.25s ease-in-out; }
+          #other_projects_content #bands .band .content .wrapper:hover .bilde2, #other_projects_content #bands .engineer .content .wrapper:hover .bilde2, #other_projects_content #audio_engineer .band .content .wrapper:hover .bilde2, #other_projects_content #audio_engineer .engineer .content .wrapper:hover .bilde2 {
+            opacity: 1; }
+          #other_projects_content #bands .band .content .wrapper:hover .bilde1, #other_projects_content #bands .engineer .content .wrapper:hover .bilde1, #other_projects_content #audio_engineer .band .content .wrapper:hover .bilde1, #other_projects_content #audio_engineer .engineer .content .wrapper:hover .bilde1 {
+            opacity: 0; }
+          #other_projects_content #bands .band .content .wrapper .bands, #other_projects_content #bands .engineer .content .wrapper .bands, #other_projects_content #audio_engineer .band .content .wrapper .bands, #other_projects_content #audio_engineer .engineer .content .wrapper .bands {
+            position: absolute;
+            top: 0; }
+            @media (max-width: 449px) {
+              #other_projects_content #bands .band .content .wrapper .bands, #other_projects_content #bands .engineer .content .wrapper .bands, #other_projects_content #audio_engineer .band .content .wrapper .bands, #other_projects_content #audio_engineer .engineer .content .wrapper .bands {
+                height: 300px; } }
+            @media (min-width: 600px) {
+              #other_projects_content #bands .band .content .wrapper .bands, #other_projects_content #bands .engineer .content .wrapper .bands, #other_projects_content #audio_engineer .band .content .wrapper .bands, #other_projects_content #audio_engineer .engineer .content .wrapper .bands {
+                height: 320px; } }
+            @media (min-width: 900px) {
+              #other_projects_content #bands .band .content .wrapper .bands, #other_projects_content #bands .engineer .content .wrapper .bands, #other_projects_content #audio_engineer .band .content .wrapper .bands, #other_projects_content #audio_engineer .engineer .content .wrapper .bands {
+                height: 320px; } }
+            @media (min-width: 1200px) {
+              #other_projects_content #bands .band .content .wrapper .bands, #other_projects_content #bands .engineer .content .wrapper .bands, #other_projects_content #audio_engineer .band .content .wrapper .bands, #other_projects_content #audio_engineer .engineer .content .wrapper .bands {
+                height: 420px; } }
+            @media (min-width: 1500px) {
+              #other_projects_content #bands .band .content .wrapper .bands, #other_projects_content #bands .engineer .content .wrapper .bands, #other_projects_content #audio_engineer .band .content .wrapper .bands, #other_projects_content #audio_engineer .engineer .content .wrapper .bands {
+                height: 600px; } }
+          #other_projects_content #bands .band .content .wrapper .engineer_img, #other_projects_content #bands .engineer .content .wrapper .engineer_img, #other_projects_content #audio_engineer .band .content .wrapper .engineer_img, #other_projects_content #audio_engineer .engineer .content .wrapper .engineer_img {
+            position: absolute;
+            top: 0; }
+            @media (max-width: 449px) {
+              #other_projects_content #bands .band .content .wrapper .engineer_img, #other_projects_content #bands .engineer .content .wrapper .engineer_img, #other_projects_content #audio_engineer .band .content .wrapper .engineer_img, #other_projects_content #audio_engineer .engineer .content .wrapper .engineer_img {
+                height: 300px;
+                right: -50vw; } }
+            @media (min-width: 600px) {
+              #other_projects_content #bands .band .content .wrapper .engineer_img, #other_projects_content #bands .engineer .content .wrapper .engineer_img, #other_projects_content #audio_engineer .band .content .wrapper .engineer_img, #other_projects_content #audio_engineer .engineer .content .wrapper .engineer_img {
+                height: 448px; } }
+            @media (min-width: 900px) {
+              #other_projects_content #bands .band .content .wrapper .engineer_img, #other_projects_content #bands .engineer .content .wrapper .engineer_img, #other_projects_content #audio_engineer .band .content .wrapper .engineer_img, #other_projects_content #audio_engineer .engineer .content .wrapper .engineer_img {
+                height: 448px; } }
+            @media (min-width: 1200px) {
+              #other_projects_content #bands .band .content .wrapper .engineer_img, #other_projects_content #bands .engineer .content .wrapper .engineer_img, #other_projects_content #audio_engineer .band .content .wrapper .engineer_img, #other_projects_content #audio_engineer .engineer .content .wrapper .engineer_img {
+                height: 420px; } }
+            @media (min-width: 1500px) {
+              #other_projects_content #bands .band .content .wrapper .engineer_img, #other_projects_content #bands .engineer .content .wrapper .engineer_img, #other_projects_content #audio_engineer .band .content .wrapper .engineer_img, #other_projects_content #audio_engineer .engineer .content .wrapper .engineer_img {
+                height: 600px; } }
+    @media (max-width: 449px) {
+      #other_projects_content #bands #someTRDVOICES .socialMedia, #other_projects_content #audio_engineer #someTRDVOICES .socialMedia {
+        width: 100vw !important; } }
+    @media (min-width: 600px) {
+      #other_projects_content #bands #someTRDVOICES .socialMedia, #other_projects_content #audio_engineer #someTRDVOICES .socialMedia {
+        width: 50%; } }
+    @media (min-width: 900px) {
+      #other_projects_content #bands #someTRDVOICES .socialMedia, #other_projects_content #audio_engineer #someTRDVOICES .socialMedia {
+        margin-left: 0vw; } }
+    #other_projects_content #bands #someNOK .instagram, #other_projects_content #audio_engineer #someNOK .instagram {
+      color: #fb3958; }
+      @media (max-width: 449px) {
+        #other_projects_content #bands #someNOK .instagram, #other_projects_content #audio_engineer #someNOK .instagram {
+          display: none; } }
+    @media (max-width: 449px) {
+      #other_projects_content #bands #someNOK .Scloud, #other_projects_content #audio_engineer #someNOK .Scloud {
+        display: none; } }
+    @media (max-width: 449px) {
+      #other_projects_content #bands #someNOK, #other_projects_content #audio_engineer #someNOK {
+        margin-bottom: 380px !important; } }
+    #other_projects_content #bands .social_media_wrapper, #other_projects_content #audio_engineer .social_media_wrapper {
+      color: #f4f4f4;
+      height: 55px;
+      width: 100%; }
+      @media (max-width: 449px) {
+        #other_projects_content #bands .social_media_wrapper, #other_projects_content #audio_engineer .social_media_wrapper {
+          margin-bottom: 680px;
+          font-size: 27px;
+          margin-left: -10vw;
+          width: 100vw; } }
+      @media (min-width: 600px) {
+        #other_projects_content #bands .social_media_wrapper, #other_projects_content #audio_engineer .social_media_wrapper {
+          margin-left: -10vw;
+          font-size: 19.6px;
+          width: 100vw; } }
+      @media (min-width: 900px) {
+        #other_projects_content #bands .social_media_wrapper, #other_projects_content #audio_engineer .social_media_wrapper {
+          margin-left: 0;
+          font-size: 22.5px;
+          width: 100%; } }
+      @media (min-width: 1200px) {
+        #other_projects_content #bands .social_media_wrapper, #other_projects_content #audio_engineer .social_media_wrapper {
+          font-size: 25.5px;
+          width: 100%; } }
+      #other_projects_content #bands .social_media_wrapper .socialMedia, #other_projects_content #audio_engineer .social_media_wrapper .socialMedia {
+        z-index: 10;
+        height: inherit;
+        display: inline-block;
+        text-align: center;
+        width: calc(100%/3);
+        float: left; }
+        @media (max-width: 449px) {
+          #other_projects_content #bands .social_media_wrapper .socialMedia, #other_projects_content #audio_engineer .social_media_wrapper .socialMedia {
+            width: 100vw; } }
+        #other_projects_content #bands .social_media_wrapper .socialMedia p, #other_projects_content #audio_engineer .social_media_wrapper .socialMedia p {
+          padding: 15px;
+          z-index: 10; }
+      #other_projects_content #bands .social_media_wrapper .facebook p, #other_projects_content #audio_engineer .social_media_wrapper .facebook p {
+        background: #3b5998; }
+      #other_projects_content #bands .social_media_wrapper .facebook:hover p, #other_projects_content #audio_engineer .social_media_wrapper .facebook:hover p {
+        background: rgba(59, 89, 152, 0.8); }
+      #other_projects_content #bands .social_media_wrapper .Scloud p, #other_projects_content #audio_engineer .social_media_wrapper .Scloud p {
+        background: #ff5836; }
+      #other_projects_content #bands .social_media_wrapper .Scloud:hover p, #other_projects_content #audio_engineer .social_media_wrapper .Scloud:hover p {
+        background: rgba(255, 88, 54, 0.8); }
+      #other_projects_content #bands .social_media_wrapper .instagram p, #other_projects_content #audio_engineer .social_media_wrapper .instagram p {
+        background: #fb3958; }
+      #other_projects_content #bands .social_media_wrapper .instagram:hover p, #other_projects_content #audio_engineer .social_media_wrapper .instagram:hover p {
+        background: rgba(251, 57, 88, 0.8); }
+  #other_projects_content #selected_performances {
+    position: relative;
+    width: 100%; }
+    @media (max-width: 449px) {
+      #other_projects_content #selected_performances {
+        height: 1400px; } }
+    @media (min-width: 1500px) {
+      #other_projects_content #selected_performances {
+        margin-top: 100px; } }
+    @media (max-width: 449px) {
+      #other_projects_content #selected_performances {
+        margin-bottom: 50px;
+        margin-top: 0; } }
+    @media (min-width: 600px) {
+      #other_projects_content #selected_performances {
+        margin-bottom: 600px; } }
+    #other_projects_content #selected_performances .performances {
+      height: 500px;
+      margin-bottom: 500px; }
+      @media (max-width: 449px) {
+        #other_projects_content #selected_performances .performances {
+          margin-bottom: 100px;
+          margin-top: 0; } }
+      #other_projects_content #selected_performances .performances .content {
+        width: 100%;
+        position: relative;
+        padding-bottom: 50px;
+        padding-top: 50px; }
+        #other_projects_content #selected_performances .performances .content .wrapper {
+          position: relative;
+          width: 100%;
+          height: 450px; }
+          @media (max-width: 449px) {
+            #other_projects_content #selected_performances .performances .content .wrapper {
+              height: 150px; } }
+          #other_projects_content #selected_performances .performances .content .wrapper .performance_img {
+            position: absolute;
+            bottom: 0; }
+            @media (max-width: 449px) {
+              #other_projects_content #selected_performances .performances .content .wrapper .performance_img {
+                width: 100vw;
+                margin-left: calc((100% - 100vw)/2); } }
+            @media (min-width: 600px) {
+              #other_projects_content #selected_performances .performances .content .wrapper .performance_img {
+                width: 100vw;
+                margin-left: calc((100% - 100vw)/2); } }
+            @media (min-width: 900px) {
+              #other_projects_content #selected_performances .performances .content .wrapper .performance_img {
+                width: 700px;
+                margin-left: calc((100% - 700px)/2); } }
+            @media (min-width: 1200px) {
+              #other_projects_content #selected_performances .performances .content .wrapper .performance_img {
+                width: 700px;
+                margin-left: calc((100% - 700px)/2); } }
+            @media (min-width: 1500px) {
+              #other_projects_content #selected_performances .performances .content .wrapper .performance_img {
+                width: 900px;
+                margin-left: calc((100% - 900px)/2); } }
+          #other_projects_content #selected_performances .performances .content .wrapper .bilde2 {
+            opacity: 0;
+            transition: 1.25s ease-in-out; }
+          #other_projects_content #selected_performances .performances .content .wrapper .bilde1 {
+            opacity: 1;
+            transition: 1.25s ease-in-out; }
+          #other_projects_content #selected_performances .performances .content .wrapper:hover .bilde2 {
+            opacity: 1; }
+          #other_projects_content #selected_performances .performances .content .wrapper:hover .bilde1 {
+            opacity: 0; }
+          #other_projects_content #selected_performances .performances .content .wrapper h2 {
+            -webkit-text-stroke: .1px black;
+            text-align: center;
+            color: #F9CF00;
+            position: absolute;
+            bottom: 40px;
+            width: 100%; }
+            @media (max-width: 449px) {
+              #other_projects_content #selected_performances .performances .content .wrapper h2 {
+                width: 290px;
+                margin-left: calc((100% - 290px)/2);
+                bottom: 15px; } }
+            @media (min-width: 600px) {
+              #other_projects_content #selected_performances .performances .content .wrapper h2 {
+                font-size: 42px; } }
+            @media (min-width: 900px) {
+              #other_projects_content #selected_performances .performances .content .wrapper h2 {
+                font-size: 45px; } }
+            @media (min-width: 1200px) {
+              #other_projects_content #selected_performances .performances .content .wrapper h2 {
+                font-size: 51px; } }
+        #other_projects_content #selected_performances .performances .content .projects_text {
+          position: absolute;
+          z-index: 10;
+          text-align: center;
+          color: #F9CF00;
+          line-height: 140%; }
+          @media (max-width: 449px) {
+            #other_projects_content #selected_performances .performances .content .projects_text {
+              width: 330px;
+              margin-left: calc((100% - 330px)/2);
+              line-height: 150%;
+              font-size: 9.9px;
+              height: 200px; } }
+          @media (min-width: 600px) {
+            #other_projects_content #selected_performances .performances .content .projects_text {
+              width: 690px;
+              margin-left: calc((100% - 690px)/2);
+              font-size: 18.2px;
+              height: 300px; } }
+          @media (min-width: 900px) {
+            #other_projects_content #selected_performances .performances .content .projects_text {
+              width: 865px;
+              margin-left: calc((100% - 865px)/2);
+              font-size: 19.5px; } }
+          @media (min-width: 1200px) {
+            #other_projects_content #selected_performances .performances .content .projects_text {
+              width: 70vw;
+              left: 0;
+              margin-left: 5vw;
+              padding-bottom: 40px;
+              padding-top: 30px;
+              font-size: 22.1px; } }
+          #other_projects_content #selected_performances .performances .content .projects_text p {
+            margin: 20px; }
+
+#contact {
+  margin-bottom: 100px;
+  background: #F9CF00;
+  position: relative;
+  width: 100%;
+  height: 350px; }
+
+#yellow_h2 {
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  text-align: center;
+  color: #F9CF00;
+  z-index: 10; }
+  @media (max-width: 449px) {
+    #yellow_h2 {
+      top: -20px;
+      height: 20px;
+      font-size: 40px; } }
+  @media (min-width: 600px) {
+    #yellow_h2 {
+      top: -25px;
+      height: 25px;
+      font-size: 50px; } }
+  @media (min-width: 900px) {
+    #yellow_h2 {
+      top: -30px;
+      height: 30px;
+      font-size: 60px; } }
+  @media (min-width: 1200px) {
+    #yellow_h2 {
+      top: -40px;
+      height: 40px;
+      font-size: 80px; } }
+
+#black_h2 {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  color: #000; }
+  @media (max-width: 449px) {
+    #black_h2 {
+      top: -20px;
+      height: 20px;
+      font-size: 40px; } }
+  @media (min-width: 600px) {
+    #black_h2 {
+      top: -25px;
+      height: 25px;
+      font-size: 50px; } }
+  @media (min-width: 900px) {
+    #black_h2 {
+      top: -30px;
+      height: 30px;
+      font-size: 60px; } }
+  @media (min-width: 1200px) {
+    #black_h2 {
+      top: -40px;
+      height: 40px;
+      font-size: 80px; } }
+
+.contact_div {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center; }
+  @media (max-width: 449px) {
+    .contact_div {
+      font-size: 13.5px;
+      padding-top: 80px;
+      margin-bottom: 30px; } }
+  @media (min-width: 600px) {
+    .contact_div {
+      font-size: 23px;
+      margin-bottom: 20px;
+      padding-top: 80px; } }
+  @media (min-width: 900px) {
+    .contact_div {
+      font-size: 23px;
+      margin-bottom: 20px;
+      padding-top: 80px; } }
+  @media (min-width: 1200px) {
+    .contact_div {
+      font-size: 28px;
+      margin-bottom: 30px;
+      padding-top: 80px; } }
+  @media (min-width: 1500px) {
+    .contact_div {
+      font-size: 30px; } }
+
+.web_design {
+  color: black;
+  position: absolute;
+  width: 90%;
+  text-align: center;
+  line-height: 130%; }
+  @media (max-width: 449px) {
+    .web_design {
+      font-size: 11.7px;
+      bottom: 30px;
+      left: 2.5%; } }
+  @media (min-width: 600px) {
+    .web_design {
+      font-size: 20px;
+      left: 5%;
+      bottom: 5px; } }
+  @media (min-width: 1500px) {
+    .web_design {
+      font-size: 30px;
+      left: 5%;
+      bottom: 5px; } }
+
+.some_contact {
+  width: 255px;
+  margin-left: calc((100% - 255px)/2); }
+  .some_contact img:hover {
+    cursor: pointer;
+    filter: invert(1) sepia(100%); }
